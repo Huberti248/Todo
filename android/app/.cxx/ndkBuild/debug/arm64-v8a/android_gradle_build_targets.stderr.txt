@@ -1,0 +1,576 @@
+In file included from C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/mdct.c:39:
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/mdct_lookup.h:21:14: warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const LOOKUP_T sincos_lookup0[1026] = {
+             ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/misc.h:28:20: note: expanded from macro 'LOOKUP_T'
+#  define LOOKUP_T const ogg_int32_t
+                   ^
+In file included from C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/mdct.c:39:
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/mdct_lookup.h:282:14: warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const LOOKUP_T sincos_lookup1[1024] = {
+             ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/misc.h:28:20: note: expanded from macro 'LOOKUP_T'
+#  define LOOKUP_T const ogg_int32_t
+                   ^
+2 warnings generated.
+In file included from C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window.c:22:
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window_lookup.h:21:14: warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const LOOKUP_T vwin64[32] = {
+             ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/misc.h:28:20: note: expanded from macro 'LOOKUP_T'
+#  define LOOKUP_T const ogg_int32_t
+                   ^
+In file included from C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window.c:22:
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window_lookup.h:32:14: warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const LOOKUP_T vwin128[64] = {
+             ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/misc.h:28:20: note: expanded from macro 'LOOKUP_T'
+#  define LOOKUP_T const ogg_int32_t
+                   ^
+In file included from C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window.c:22:
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window_lookup.h:51:14: warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const LOOKUP_T vwin256[128] = {
+             ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/misc.h:28:20: note: expanded from macro 'LOOKUP_T'
+#  define LOOKUP_T const ogg_int32_t
+                   ^
+In file included from C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window.c:22:
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window_lookup.h:86:14: warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const LOOKUP_T vwin512[256] = {
+             ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/misc.h:28:20: note: expanded from macro 'LOOKUP_T'
+#  define LOOKUP_T const ogg_int32_t
+                   ^
+In file included from C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window.c:22:
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window_lookup.h:153:14: warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const LOOKUP_T vwin1024[512] = {
+             ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/misc.h:28:20: note: expanded from macro 'LOOKUP_T'
+#  define LOOKUP_T const ogg_int32_t
+                   ^
+In file included from C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window.c:22:
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window_lookup.h:284:14: warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const LOOKUP_T vwin2048[1024] = {
+             ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/misc.h:28:20: note: expanded from macro 'LOOKUP_T'
+#  define LOOKUP_T const ogg_int32_t
+                   ^
+In file included from C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window.c:22:
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window_lookup.h:543:14: warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const LOOKUP_T vwin4096[2048] = {
+             ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/misc.h:28:20: note: expanded from macro 'LOOKUP_T'
+#  define LOOKUP_T const ogg_int32_t
+                   ^
+In file included from C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window.c:22:
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/window_lookup.h:1058:14: warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+static const LOOKUP_T vwin8192[4096] = {
+             ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/misc.h:28:20: note: expanded from macro 'LOOKUP_T'
+#  define LOOKUP_T const ogg_int32_t
+                   ^
+8 warnings generated.
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/sharedbook.c:228:6: warning: absolute value function 'abs' given an argument of type 'long' but has parameter of type 'int' which may cause truncation of value [-Wabsolute-value]
+                                 abs(b->quantlist[index]),&point);
+                                 ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/sharedbook.c:228:6: note: use function 'labs' instead
+                                 abs(b->quantlist[index]),&point);
+                                 ^~~
+                                 labs
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/sharedbook.c:262:6: warning: absolute value function 'abs' given an argument of type 'long' but has parameter of type 'int' which may cause truncation of value [-Wabsolute-value]
+                                 abs(b->quantlist[j*b->dim+k]),&point);
+                                 ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libvorbisidec-1.2.1/sharedbook.c:262:6: note: use function 'labs' instead
+                                 abs(b->quantlist[j*b->dim+k]),&point);
+                                 ^~~
+                                 labs
+2 warnings generated.
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:678:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:684:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:690:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:696:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:702:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:708:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:714:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:720:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:728:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:734:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:740:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:746:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:752:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:758:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:764:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:770:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:780:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:786:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:792:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:798:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:804:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:810:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:816:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:822:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:830:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:836:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:842:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:848:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:854:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:860:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:866:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:872:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:882:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:888:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:894:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:900:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:906:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:912:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:918:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:924:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:932:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:938:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:944:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:950:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:956:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:962:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:968:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:974:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:988:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:995:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1002:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1009:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1016:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1023:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1030:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1037:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1045:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1052:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1059:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1066:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1073:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1080:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1087:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1094:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1103:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1110:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1117:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1124:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1131:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1138:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1145:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1152:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1160:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1167:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1174:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1181:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1188:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1195:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1202:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP8
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:291:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP8'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:1209:2: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        SNDMIX_BEGINSAMPLELOOP16
+        ^
+C:/home/dev/Todo/android/app/jni/SDL_mixer/external/libmodplug-0.8.9.0/src/fastmix.cpp:299:2: note: expanded from macro 'SNDMIX_BEGINSAMPLELOOP16'
+        register MODCHANNEL * const pChn = pChannel;\
+        ^
+80 warnings generated.
+C:/home/dev/Todo/android/app/jni/src/../../../../main.cpp:500:69: warning: '&&' within '||' [-Wlogical-op-parentheses]
+            if (event.type == SDL_QUIT || event.type == SDL_KEYDOWN && event.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
+                                       ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/home/dev/Todo/android/app/jni/src/../../../../main.cpp:500:69: note: place parentheses around the '&&' expression to silence this warning
+            if (event.type == SDL_QUIT || event.type == SDL_KEYDOWN && event.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
+                                                                    ^
+                                          (                                                                            )
+1 warning generated.
