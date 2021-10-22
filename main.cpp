@@ -499,13 +499,19 @@ int main(int argc, char* argv[])
     SDL_GetWindowSize(window, &w, &h);
     SDL_RenderSetScale(renderer, w / (float)windowWidth, h / (float)windowHeight);
     SDL_AddEventWatch(eventWatch, 0);
+    SDL_Texture* cursorT = IMG_LoadTexture(renderer, "res/cursor.png");
     bool running = true;
-    Text exampleText;
-    exampleText.setText(renderer, robotoF, "Example text", { ORANGISH_COLOR });
-    exampleText.dstR.w = 100;
-    exampleText.dstR.h = 40;
-    exampleText.dstR.x = windowWidth / 2 - exampleText.dstR.w / 2;
-    exampleText.dstR.y = windowHeight / 2 - exampleText.dstR.h / 2;
+    int currentText = 0;
+    std::vector<Text> texts;
+    texts.push_back(Text());
+    texts.back().dstR.h = 20;
+    texts.back().dstR.x = 0;
+    texts.back().dstR.y = 0;
+    texts.back().autoAdjustW = true;
+    texts.back().wMultiplier = 0.2;
+    SDL_Point cursorPos{};
+    bool shouldShowCursor = false;    
+    // TODO: Remember that when doing scroll it might underflow y and things will still happen on the screen
     while (running) {
         SDL_Event event;
         while (SDL_PollEvent(&event)) {
@@ -519,10 +525,13 @@ int main(int argc, char* argv[])
             if (event.type == SDL_KEYDOWN) {
                 keys[event.key.keysym.scancode] = true;
                 if (event.key.keysym.scancode == SDL_SCANCODE_BACKSPACE) {
-                    std::u32string s = utf8ToUcs4(exampleText.text);
+                    std::u32string s = utf8ToUcs4(texts[currentText].text);
                     if (!s.empty()) {
                         s.pop_back();
-                        exampleText.setText(renderer, robotoF, ucs4ToUtf8(s), { ORANGISH_COLOR });
+                        texts[currentText].setText(renderer, robotoF, ucs4ToUtf8(s), { ORANGISH_COLOR });
+                        if (s.empty()&&currentText) {
+                            --currentText;
+                        }
                     }
                 }
             }
@@ -531,6 +540,24 @@ int main(int argc, char* argv[])
             }
             if (event.type == SDL_MOUSEBUTTONDOWN) {
                 buttons[event.button.button] = true;
+                shouldShowCursor = true;
+                cursorPos.x = mousePos.x;
+                cursorPos.y = mousePos.y;
+                for (int i = 0; i < texts.size(); ++i) {
+                    if (SDL_PointInFRect(&cursorPos, &texts[i].dstR)) {
+                        cursorPos.y = texts[i].dstR.y + texts[i].dstR.h;
+                        break;
+                    }
+                }
+                if (cursorPos.y > texts.back().dstR.y + texts.back().dstR.h) {
+                    cursorPos.x = texts.back().dstR.x + texts.back().dstR.w;
+                    cursorPos.y = texts.back().dstR.y + texts.back().dstR.h;
+                }
+                else if (cursorPos.x > texts.back().dstR.x + texts.back().dstR.w && cursorPos.y > texts.back().dstR.y) {
+                    cursorPos.x = texts.back().dstR.x + texts.back().dstR.w;
+                    cursorPos.y = texts.back().dstR.y + texts.back().dstR.h;
+                }
+                SDL_StartTextInput();
             }
             if (event.type == SDL_MOUSEBUTTONUP) {
                 buttons[event.button.button] = false;
@@ -544,12 +571,41 @@ int main(int argc, char* argv[])
                 realMousePos.y = event.motion.y;
             }
             if (event.type == SDL_TEXTINPUT) {
-                exampleText.setText(renderer, robotoF, exampleText.text + event.text.text, { ORANGISH_COLOR });
+                std::u32string s = utf8ToUcs4(texts[currentText].text);
+                texts[currentText].setText(renderer, robotoF, ucs4ToUtf8(s + utf8ToUcs4(event.text.text)), { ORANGISH_COLOR });
+                if (texts[currentText].dstR.x + texts[currentText].dstR.w > windowWidth) {
+                    std::u32string s = utf8ToUcs4(texts[currentText].text);
+                    char32_t last = s.back();
+                    s.pop_back();
+                    texts[currentText].setText(renderer, robotoF, ucs4ToUtf8(s), { ORANGISH_COLOR });
+                    ++currentText;
+                    if (currentText == texts.size()) {
+                        texts.push_back(texts[currentText - 1]);
+                        texts[currentText].dstR.y += texts[currentText].dstR.h;
+                        texts[currentText].setText(renderer, robotoF, ucs4ToUtf8(std::u32string(1, last)), { ORANGISH_COLOR });
+                    }
+                }
+                // TODO: When it should go down?
+                #if 0
+                if (texts[currentText]) {
+
+                }
+                #endif
             }
         }
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
         SDL_RenderClear(renderer);
-        exampleText.draw(renderer);
+        for (int i = 0; i < texts.size(); ++i) {
+            texts[i].draw(renderer);
+        }
+        if (shouldShowCursor) {
+            SDL_FRect r;
+            r.w = 32;
+            r.h = 32;
+            r.x = cursorPos.x - r.w / 2;
+            r.y = cursorPos.y;
+            SDL_RenderCopyF(renderer, cursorT, 0, &r);
+        }
         SDL_RenderPresent(renderer);
     }
     // TODO: On mobile remember to use eventWatch function (it doesn't reach this code when terminating)
