@@ -510,8 +510,9 @@ int main(int argc, char* argv[])
     texts.back().autoAdjustW = true;
     texts.back().wMultiplier = 0.2;
     SDL_Point cursorPos{};
-    bool shouldShowCursor = false;    
+    bool shouldShowCursor = false;
     // TODO: Remember that when doing scroll it might underflow y and things will still happen on the screen
+    // TODO: On backspace it should delete character selected by cursor
     while (running) {
         SDL_Event event;
         while (SDL_PollEvent(&event)) {
@@ -525,14 +526,46 @@ int main(int argc, char* argv[])
             if (event.type == SDL_KEYDOWN) {
                 keys[event.key.keysym.scancode] = true;
                 if (event.key.keysym.scancode == SDL_SCANCODE_BACKSPACE) {
+                    cursorPos.y -= 10;
+                    for (int i = 0; i < texts.size(); ++i) {
+                        if (texts[i].dstR.y <= cursorPos.y && texts[i].dstR.y + texts[i].dstR.h >= cursorPos.y) {
+                            Text text = texts[i];
+                            std::u32string last;
+                            while (SDL_PointInFRect(&cursorPos, &text.dstR)) {
+                                std::u32string s = utf8ToUcs4(text.text);
+                                last = s;
+                                s.pop_back();
+                                text.setText(renderer, robotoF, ucs4ToUtf8(s));
+                            }
+                            last += utf8ToUcs4(texts[i].text.substr(last.size() + 1));
+                            texts[i].setText(renderer, robotoF, ucs4ToUtf8(last), { ORANGISH_COLOR });
+                            #if 0
+                            std::u32string s = utf8ToUcs4(text.text);
+                            if (!s.empty()) {
+                                s.pop_back();
+                            }
+                            text.setText(renderer, robotoF, ucs4ToUtf8(s));
+                            cursorPos.x = text.dstR.x + text.dstR.w;
+                            #endif
+                            break;
+                        }
+                    }
+                    cursorPos.y += 10;
+#if 0
                     std::u32string s = utf8ToUcs4(texts[currentText].text);
                     if (!s.empty()) {
                         s.pop_back();
                         texts[currentText].setText(renderer, robotoF, ucs4ToUtf8(s), { ORANGISH_COLOR });
                         if (s.empty()&&currentText) {
                             --currentText;
+                            if (texts.front().dstR.y<0) {
+                                for (int i = 0; i < texts.size(); ++i) {
+                                    texts[i].dstR.y += texts[i].dstR.h;
+                                }
+                            }
                         }
                     }
+#endif
                 }
             }
             if (event.type == SDL_KEYUP) {
@@ -585,12 +618,11 @@ int main(int argc, char* argv[])
                         texts[currentText].setText(renderer, robotoF, ucs4ToUtf8(std::u32string(1, last)), { ORANGISH_COLOR });
                     }
                 }
-                // TODO: When it should go down?
-                #if 0
-                if (texts[currentText]) {
-
+                if (texts[currentText].dstR.y + texts[currentText].dstR.h > windowHeight) {
+                    for (int i = 0; i < texts.size(); ++i) {
+                        texts[i].dstR.y -= texts[i].dstR.h;
+                    }
                 }
-                #endif
             }
         }
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);

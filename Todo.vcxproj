@@ -95,6 +95,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="vendor\BIGINT\BigInteger.cc" />
+    <ClCompile Include="vendor\BIGINT\BigIntegerAlgorithms.cc" />
+    <ClCompile Include="vendor\BIGINT\BigIntegerUtils.cc" />
+    <ClCompile Include="vendor\BIGINT\BigUnsigned.cc" />
+    <ClCompile Include="vendor\BIGINT\BigUnsignedInABase.cc" />
     <ClCompile Include="vendor\PUGIXML\src\pugixml.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
