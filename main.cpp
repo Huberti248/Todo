@@ -512,7 +512,7 @@ int main(int argc, char* argv[])
     SDL_Point cursorPos{};
     bool shouldShowCursor = false;
     // TODO: Remember that when doing scroll it might underflow y and things will still happen on the screen
-    // TODO: On backspace it should delete character selected by cursor
+    // TODO: It should insert characters in cursor position
     while (running) {
         SDL_Event event;
         while (SDL_PollEvent(&event)) {
@@ -530,23 +530,19 @@ int main(int argc, char* argv[])
                     for (int i = 0; i < texts.size(); ++i) {
                         if (texts[i].dstR.y <= cursorPos.y && texts[i].dstR.y + texts[i].dstR.h >= cursorPos.y) {
                             Text text = texts[i];
-                            std::u32string last;
+                            std::u32string s;
                             while (SDL_PointInFRect(&cursorPos, &text.dstR)) {
-                                std::u32string s = utf8ToUcs4(text.text);
-                                last = s;
+                                s = utf8ToUcs4(text.text);
+                                if (s.empty()) {
+                                    goto ifEnd;
+                                }
                                 s.pop_back();
                                 text.setText(renderer, robotoF, ucs4ToUtf8(s));
                             }
-                            last += utf8ToUcs4(texts[i].text.substr(last.size() + 1));
-                            texts[i].setText(renderer, robotoF, ucs4ToUtf8(last), { ORANGISH_COLOR });
-                            #if 0
-                            std::u32string s = utf8ToUcs4(text.text);
-                            if (!s.empty()) {
-                                s.pop_back();
-                            }
-                            text.setText(renderer, robotoF, ucs4ToUtf8(s));
-                            cursorPos.x = text.dstR.x + text.dstR.w;
-                            #endif
+                            cursorPos.x = text.dstR.x + text.dstR.w - 1;
+                            s += utf8ToUcs4(texts[i].text.substr(s.size() + 1));
+                            texts[i].setText(renderer, robotoF, ucs4ToUtf8(s), { ORANGISH_COLOR });
+                        ifEnd:
                             break;
                         }
                     }
