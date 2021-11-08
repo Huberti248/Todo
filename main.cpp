@@ -484,6 +484,37 @@ std::u32string utf8ToUcs4(const std::string& in)
     return conv.from_bytes(in);
 }
 
+int countCharactersUpToCursor(std::vector<Text>& texts, int currentText, TTF_Font* robotoF, SDL_Point cursorPos)
+{
+    // TODO: Is it possible that cursor position won't be in text?
+    Text leftPartText = texts[currentText];
+    if (leftPartText.text.size() == 0) {
+        return 0;
+    }
+    if (leftPartText.text.size() == 1) {
+        if (cursorPos.x < leftPartText.dstR.x + leftPartText.dstR.w / 2.f) {
+            return 0;
+        }
+        else {
+            return 1;
+        }
+    }
+    for (int i = 1;; ++i) {
+        leftPartText.setText(renderer, robotoF, texts[currentText].text.substr(0, i + 1), { ORANGISH_COLOR });
+        if (SDL_PointInFRect(&cursorPos, &leftPartText.dstR)) {
+            Text tmpText = leftPartText;
+            tmpText.setText(renderer, robotoF, texts[currentText].text.substr(0, i), { ORANGISH_COLOR });
+            float width = leftPartText.dstR.x + leftPartText.dstR.w - tmpText.dstR.x + tmpText.dstR.w;
+            if (cursorPos.x < tmpText.dstR.x + tmpText.dstR.w + width / 2) {
+                return i;
+            }
+            else {
+                return i + 1;
+            }
+        }
+    }
+}
+
 int main(int argc, char* argv[])
 {
     std::srand(std::time(0));
@@ -600,20 +631,26 @@ int main(int argc, char* argv[])
                 realMousePos.y = event.motion.y;
             }
             if (event.type == SDL_TEXTINPUT) {
+                cursorPos.y -= 10;
+                int count = countCharactersUpToCursor(texts,currentText,robotoF,cursorPos);
+                cursorPos.y += 10;
                 std::u32string s = utf8ToUcs4(texts[currentText].text);
-                texts[currentText].setText(renderer, robotoF, ucs4ToUtf8(s + utf8ToUcs4(event.text.text)), { ORANGISH_COLOR });
+                s.insert(count, 1, utf8ToUcs4(event.text.text)[0]); // TODO: Is this insert correct?
+                texts[currentText].setText(renderer, robotoF, ucs4ToUtf8(s), { ORANGISH_COLOR });
                 if (texts[currentText].dstR.x + texts[currentText].dstR.w > windowWidth) {
                     std::u32string s = utf8ToUcs4(texts[currentText].text);
                     char32_t last = s.back();
                     s.pop_back();
                     texts[currentText].setText(renderer, robotoF, ucs4ToUtf8(s), { ORANGISH_COLOR });
                     ++currentText;
+                    // TODO: What if it was inserted in the middle and I should put the last character in the beginning of next line plus additionally move more last characters to the next lines
                     if (currentText == texts.size()) {
                         texts.push_back(texts[currentText - 1]);
                         texts[currentText].dstR.y += texts[currentText].dstR.h;
                         texts[currentText].setText(renderer, robotoF, ucs4ToUtf8(std::u32string(1, last)), { ORANGISH_COLOR });
                     }
                 }
+                // TODO: Cursor should move one letter right on each type
                 if (texts[currentText].dstR.y + texts[currentText].dstR.h > windowHeight) {
                     for (int i = 0; i < texts.size(); ++i) {
                         texts[i].dstR.y -= texts[i].dstR.h;
