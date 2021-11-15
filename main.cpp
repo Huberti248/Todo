@@ -541,7 +541,6 @@ int main(int argc, char* argv[])
     texts.back().autoAdjustW = true;
     texts.back().wMultiplier = 0.2;
     SDL_Point cursorPos{};
-    bool shouldShowCursor = false;
     // TODO: Remember that when doing scroll it might underflow y and things will still happen on the screen
     // TODO: It should insert characters in cursor position
     while (running) {
@@ -557,6 +556,7 @@ int main(int argc, char* argv[])
             if (event.type == SDL_KEYDOWN) {
                 keys[event.key.keysym.scancode] = true;
                 if (event.key.keysym.scancode == SDL_SCANCODE_BACKSPACE) {
+                    // TODO: When deleted whole line it should come back to the previous one
                     cursorPos.y -= 10;
                     for (int i = 0; i < texts.size(); ++i) {
                         if (texts[i].dstR.y <= cursorPos.y && texts[i].dstR.y + texts[i].dstR.h >= cursorPos.y) {
@@ -600,7 +600,6 @@ int main(int argc, char* argv[])
             }
             if (event.type == SDL_MOUSEBUTTONDOWN) {
                 buttons[event.button.button] = true;
-                shouldShowCursor = true;
                 cursorPos.x = mousePos.x;
                 cursorPos.y = mousePos.y;
                 for (int i = 0; i < texts.size(); ++i) {
@@ -631,8 +630,14 @@ int main(int argc, char* argv[])
                 realMousePos.y = event.motion.y;
             }
             if (event.type == SDL_TEXTINPUT) {
+                for (int i = 0; i < texts.size(); ++i) {
+                    if (SDL_PointInFRect(&cursorPos, &texts[i].dstR)) {
+                        cursorPos.y = texts[i].dstR.y + texts[i].dstR.h;
+                        break;
+                    }
+                }
                 cursorPos.y -= 10;
-                int count = countCharactersUpToCursor(texts,currentText,robotoF,cursorPos);
+                int count = countCharactersUpToCursor(texts, currentText, robotoF, cursorPos);
                 cursorPos.y += 10;
                 std::u32string s = utf8ToUcs4(texts[currentText].text);
                 s.insert(count, 1, utf8ToUcs4(event.text.text)[0]); // TODO: Is this insert correct?
@@ -650,10 +655,12 @@ int main(int argc, char* argv[])
                         texts[currentText].setText(renderer, robotoF, ucs4ToUtf8(std::u32string(1, last)), { ORANGISH_COLOR });
                     }
                 }
-                // TODO: Cursor should move one letter right on each type
+                cursorPos.x = texts[currentText].dstR.x + texts[currentText].dstR.w - 1;
+                // TODO: Why last letter stays?
                 if (texts[currentText].dstR.y + texts[currentText].dstR.h > windowHeight) {
                     for (int i = 0; i < texts.size(); ++i) {
                         texts[i].dstR.y -= texts[i].dstR.h;
+                        cursorPos.y -= texts[i].dstR.h;
                     }
                 }
             }
@@ -663,14 +670,12 @@ int main(int argc, char* argv[])
         for (int i = 0; i < texts.size(); ++i) {
             texts[i].draw(renderer);
         }
-        if (shouldShowCursor) {
-            SDL_FRect r;
-            r.w = 32;
-            r.h = 32;
-            r.x = cursorPos.x - r.w / 2;
-            r.y = cursorPos.y;
-            SDL_RenderCopyF(renderer, cursorT, 0, &r);
-        }
+        SDL_FRect r;
+        r.w = 32;
+        r.h = 32;
+        r.x = cursorPos.x - r.w / 2;
+        r.y = cursorPos.y;
+        SDL_RenderCopyF(renderer, cursorT, 0, &r);
         SDL_RenderPresent(renderer);
     }
     // TODO: On mobile remember to use eventWatch function (it doesn't reach this code when terminating)
